@@ -28,4 +28,10 @@
         android:layout_height="wrap_content"
         android:text="AnimationSet" />
 
+    <Button
+        android:id="@+id/btnXml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xml" />
+
 </LinearLayout>

@@ -35,4 +35,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @OnClick(R.id.btnXml)
+    public void btnXml() {
+        intent = new Intent(this, XmlActivity.class);
+        startActivity(intent);
+    }
+
 }
