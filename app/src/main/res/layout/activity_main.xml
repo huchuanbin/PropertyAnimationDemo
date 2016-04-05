@@ -15,10 +15,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Object Animation" />
+
     <Button
         android:id="@+id/btnValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Value Animation" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AnimationSet" />
 
 </LinearLayout>
