@@ -21,4 +21,10 @@ public class MainActivity extends AppCompatActivity {
         intent=new Intent(this,ObjectAnimationActivity.class);
         startActivity(intent);
     }
+    @OnClick(R.id.btnValue)
+    public void btnValue() {
+        intent=new Intent(this,ValueAnimationActivity.class);
+        startActivity(intent);
+    }
+
 }

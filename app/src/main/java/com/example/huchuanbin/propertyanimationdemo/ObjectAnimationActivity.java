@@ -1,5 +1,7 @@
 package com.example.huchuanbin.propertyanimationdemo;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -8,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.animation.BounceInterpolator;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -62,9 +65,12 @@ public class ObjectAnimationActivity extends AppCompatActivity {
         animator.setRepeatMode(ValueAnimator.RESTART);//动画重复模式
         animator.setStartDelay(1000);//动画延时执行
         animator.start();//启动动画
-        animator.addUpdateListener(valueAnimator -> {
-            Log.d("ObjectAnimationActivity", "valueAnimator.getAnimatedValue():" + valueAnimator.getAnimatedValue());
-            Log.d("ObjectAnimationActivity", "valueAnimator.getAnimatedFraction():" + valueAnimator.getAnimatedFraction());
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                Toast.makeText(ObjectAnimationActivity.this, "Game Over", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
