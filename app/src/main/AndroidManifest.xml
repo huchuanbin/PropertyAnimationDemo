@@ -18,7 +18,8 @@
         <activity android:name=".ObjectAnimationActivity" />
         <activity android:name=".ValueAnimationActivity" />
         <activity android:name=".AnimatorSetActivity" />
-        <activity android:name=".XmlActivity"></activity>
+        <activity android:name=".XmlActivity" />
+        <activity android:name=".LayoutActivity"></activity>
     </application>
 
 </manifest>

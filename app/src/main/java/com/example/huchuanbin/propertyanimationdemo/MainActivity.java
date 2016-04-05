@@ -41,4 +41,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @OnClick(R.id.btnLayout)
+    public void btnLayout() {
+        intent = new Intent(this, LayoutActivity.class);
+        startActivity(intent);
+    }
+
 }
